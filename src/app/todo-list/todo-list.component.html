@@ -5,15 +5,17 @@
       task.done ? "Task is done" : "Task is not done"
     }}</mat-checkbox>
 
-    <p>{{ getFormatDate(task.created) }}</p>
-    <button
-      class="todo_item-delete_button"
-      mat-mini-fab
-      color="primary"
-      aria-label="Example icon button with a delete icon"
-      (click)="handleDelete(task)"
-    >
-      <mat-icon>delete</mat-icon>
-    </button>
+    <div class="additional-wrapper">
+      <p class="todo_item-date">{{ getFormatDate(task.created) }}</p>
+      <button
+        class="todo_item-delete_button"
+        mat-mini-fab
+        color="primary"
+        aria-label="Example icon button with a delete icon"
+        (click)="handleDelete(task)"
+      >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
   </li>
 </ul>
