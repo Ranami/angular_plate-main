@@ -1,0 +1,21 @@
+<form (submit)="onFormSubmit()" class="todo_create_form">
+  <mat-form-field class="input-full_width" appearance="fill">
+    <mat-label>Enter text</mat-label>
+    <input
+      type="email"
+      matInput
+      [(ngModel)]="taskText"
+      [ngModelOptions]="{ standalone: true }"
+      placeholder="Enter text"
+    />
+  </mat-form-field>
+
+  <button
+    class="todo_create_button"
+    mat-flat-button
+    color="primary"
+    type="submit"
+  >
+    Create
+  </button>
+</form>
